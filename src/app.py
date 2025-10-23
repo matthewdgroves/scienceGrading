@@ -255,7 +255,7 @@ def merge_and_display(n_clicks, biology, formative_contents, formative_filename,
     if biology:
         f_df['Formative Pct Grade'] = list(f_df['Formative Assessments Current Score'])
     else:
-        f_df['Formative Pct Grade'] = list(f_df['Formative Assignments Current Score']) 
+        f_df['Formative Pct Grade'] = list(f_df['Formative Current Score']) 
 
     f_df = f_df[["Student", "ID", 'Section', 'Formative Pct Grade']]
 
